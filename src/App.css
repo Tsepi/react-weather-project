@@ -18,7 +18,7 @@ body {
   list-style: none;
 }
 
-.Weather .weather-app {
+.Weather .frame {
   font-family: "Darker Grotesque", sans-serif;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
   margin: 0 auto;
