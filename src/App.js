@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Weather defaultCity="Maseru" />
+      <Weather defaultCity="Maputsoe" />
     </div>
   );
 }

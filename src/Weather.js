@@ -6,6 +6,7 @@ import WeatherForecast from "./WeatherForecast";
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weather, setWeatherData] = useState({ loaded: false });
+  const apiKey = `7d88e39fad8e3a2f1b2d1076c46f769c`;
 
   function handleResponse(response) {
     console.log(response.data);
@@ -23,7 +24,6 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = `7d88e39fad8e3a2f1b2d1076c46f769c`;
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
   }
@@ -33,6 +33,18 @@ export default function Weather(props) {
   }
   function changeCity(event) {
     setCity(event.target.value);
+  }
+
+  function showPosition(position) {
+    console.log(position);
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+
+    let geoUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(geoUrl).then(handleResponse);
+  }
+  function fetchLocation(event) {
+    navigator.geolocation.getCurrentPosition(showPosition);
   }
 
   if (weather.loaded) {
@@ -57,6 +69,7 @@ export default function Weather(props) {
                     <button
                       type="button"
                       className="btn btn-outline-secondary locate d-none d-md-inline"
+                      onClick={fetchLocation}
                     >
                       <i className="fa-solid fa-location-dot"></i>
                     </button>
