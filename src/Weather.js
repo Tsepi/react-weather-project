@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import WeatherForecast from "./WeatherForecast";
+import WeatherDaily from "./WeatherDaily";
 import Footer from "./Footer";
 
 import "./Weather.css";
@@ -86,6 +87,7 @@ export default function Weather(props) {
                 </div>
               </div>
               <WeatherForecast data={weather} />
+              <WeatherDaily />
             </div>
             <Footer />
           </div>

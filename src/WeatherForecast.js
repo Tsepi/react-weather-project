@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import WeatherDaily from "./WeatherDaily";
 
 import WeatherTemperature from "./WeatherTemperature";
 
@@ -40,10 +39,6 @@ export default function Forecast(props) {
             </ul>
           </div>
         </div>
-      </div>
-
-      <div className="container daily">
-        <WeatherDaily />
       </div>
     </div>
   );
