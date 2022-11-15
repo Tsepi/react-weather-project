@@ -5,16 +5,14 @@ body {
   background-repeat: inherit;
 }
 
-.info,
+.WeatherForecast .info,
 .temp {
   padding-top: 7px;
 }
-.temp {
+.WeatherForecast .temp {
   padding-left: 30px;
 }
-.mid {
-  display: block;
-}
+
 .Footer .git-repository {
   float: right;
   padding-top: 25px;

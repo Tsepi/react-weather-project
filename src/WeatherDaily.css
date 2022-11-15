@@ -1,0 +1,13 @@
+.WeatherDaily {
+  text-align: center;
+  padding-top: 10px;
+}
+.WeatherDaily .temperatures {
+  font-weight: 600;
+}
+.WeatherDaily .temperature-max {
+  opacity: 0.8;
+}
+.WeatherDaily .temperature-min {
+  opacity: 0.6;
+}

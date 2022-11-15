@@ -1,5 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherDaily from "./WeatherDaily";
+
 import WeatherTemperature from "./WeatherTemperature";
 
 export default function Forecast(props) {
@@ -26,7 +28,7 @@ export default function Forecast(props) {
             />
           </div>
 
-          <div className="col-5 temp">
+          <div className="col-5 temp ps-5">
             <h2>
               <WeatherTemperature celsius={props.data.temperature} />
             </h2>
@@ -41,9 +43,7 @@ export default function Forecast(props) {
       </div>
 
       <div className="container daily">
-        <hr />
-        <div className="row">{}</div>
-        <hr />
+        <WeatherDaily />
       </div>
     </div>
   );
