@@ -70,15 +70,3 @@
   cursor: default;
   font-size: 17px;
 }
-.daily {
-  padding-bottom: 5px;
-}
-.week {
-  text-align: center;
-  font-size: 17px;
-}
-.week:hover {
-  color: #ffff;
-  font-size: 22px;
-  background: #5c636a;
-}
