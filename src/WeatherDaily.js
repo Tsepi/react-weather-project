@@ -15,7 +15,6 @@ export default function WeatherDaily(props) {
 
   if (loaded) {
     console.log(forecast);
-    //let iconURL = `http://openweathermap.org/img/wn/${props.forecast[0].weather[0].icon}@2x.png`;
 
     return (
       <div className="WeatherDaily">
@@ -24,6 +23,22 @@ export default function WeatherDaily(props) {
             <hr />
             <div className="col">
               <WeatherDailyForecast data={forecast[0]} />
+            </div>
+
+            <div className="col">
+              <WeatherDailyForecast data={forecast[1]} />
+            </div>
+
+            <div className="col">
+              <WeatherDailyForecast data={forecast[2]} />
+            </div>
+
+            <div className="col">
+              <WeatherDailyForecast data={forecast[3]} />
+            </div>
+
+            <div className="col">
+              <WeatherDailyForecast data={forecast[4]} />
             </div>
           </div>
         </div>
