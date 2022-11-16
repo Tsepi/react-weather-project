@@ -7,7 +7,7 @@ export default function Forecast(props) {
   return (
     <div className="Forecast">
       <div className="container info">
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-4 capital p-3">
             <h1> {props.data.city} </h1>
 

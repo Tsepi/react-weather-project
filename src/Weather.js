@@ -59,7 +59,7 @@ export default function Weather(props) {
           <div className="container frame">
             <div className="container content">
               <div className=" container forms">
-                <div className="row">
+                <div className="row mt-2">
                   <div className="col-9 inputform">
                     <form onSubmit={handleSubmit}>
                       <input
