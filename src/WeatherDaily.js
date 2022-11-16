@@ -21,25 +21,16 @@ export default function WeatherDaily(props) {
         <div className="container daily">
           <div className="row ">
             <hr />
-            <div className="col">
-              <WeatherDailyForecast data={forecast[0]} />
-            </div>
 
-            <div className="col">
-              <WeatherDailyForecast data={forecast[1]} />
-            </div>
-
-            <div className="col">
-              <WeatherDailyForecast data={forecast[2]} />
-            </div>
-
-            <div className="col">
-              <WeatherDailyForecast data={forecast[3]} />
-            </div>
-
-            <div className="col">
-              <WeatherDailyForecast data={forecast[4]} />
-            </div>
+            {forecast.map(function (dailyForecast, index) {
+              if (index < 5) {
+                return (
+                  <div className="col" key="index">
+                    <WeatherDailyForecast data={dailyForecast} />
+                  </div>
+                );
+              }
+            })}
           </div>
         </div>
       </div>
