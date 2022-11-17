@@ -2,12 +2,11 @@
   text-align: center;
   padding-top: 10px;
 }
-/*.WeatherDaily .week:hover {
-  transition: ease-in;
+.WeatherDaily .week:hover {
   color: #ffff;
   font-size: 20px;
   background: #5c636a;
-}*/
+}
 
 .WeatherDaily .temperatures {
   font-weight: 600;
