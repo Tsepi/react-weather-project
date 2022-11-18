@@ -2,12 +2,12 @@ body {
   padding: 80px 80px;
   padding-top: 100px;
   background-color: #fffefe;
-  background-repeat: inherit;
 }
 .loading-div {
   display: flex;
   text-align: center;
   justify-content: center;
+  background-image: url("images/greysmallclouds.gif");
 }
 .loading-p {
   margin-top: 65px;
