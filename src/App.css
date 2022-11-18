@@ -4,6 +4,24 @@ body {
   background-color: #fffefe;
   background-repeat: inherit;
 }
+.loading-div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.loading-p {
+  margin-top: 65px;
+  margin-left: -118px;
+  font-size: larger;
+  font-weight: bold;
+  color: aquamarine;
+}
+.loading-rep {
+  margin-top: 165px;
+  margin-left: -110px;
+  text-align: center;
+  color: #4fa94d;
+}
 
 .WeatherForecast .info,
 .temp {

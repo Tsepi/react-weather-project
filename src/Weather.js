@@ -4,6 +4,7 @@ import axios from "axios";
 import WeatherForecast from "./WeatherForecast";
 import WeatherDaily from "./WeatherDaily";
 import Footer from "./Footer";
+import Loader from "./Loader";
 
 import "./Weather.css";
 
@@ -98,6 +99,6 @@ export default function Weather(props) {
   } else {
     search();
 
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 }
